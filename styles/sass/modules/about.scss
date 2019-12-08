@@ -8,6 +8,24 @@
     background-color: #ffe4f2;
     width: 50%;
     height: 720px;
+    position: relative;
+}
+
+.selfIntroduction {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    margin: 15% 20% 25% 20%;
+    background: url(../../images/pink_quotation.png) no-repeat;
+    background-size: 100% 100%;
+
+    p {
+        margin: 20%;
+        font-size: 20px;
+    }
+    p::first-letter {
+        font-size: 36px;
+    }
 }
 
 .about-background {

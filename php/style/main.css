@@ -1,0 +1,136 @@
+.buffer { min-height: 100vh }
+
+main { padding: 40px; }
+
+section { margin-bottom: 100px; color: white; }
+
+section > div:not(.text-wrapper) {
+  width: 30%; display:
+  inline-block;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+img {
+  width: 50%;
+  box-shadow: 5px 5px 5px 5px #9c9c9c;
+}
+
+.projects
+{
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 30px;
+  width: 65%;
+}
+
+section h3 {
+  display: inline-block;
+  color: black;
+  font-family: 'brewery', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0
+}
+
+.hidden { display: none; }
+
+.svg-graphic { width: 280px; }
+
+.main-header {
+  margin: 20px 0 0 40px; 
+  font-size: 2rem;
+  font-family: "brewery", sans-serif;
+}
+
+
+
+.popover { 
+  display: none;
+  position: absolute;
+  margin-left: 1%;
+  background-color: #fff;
+  opacity: 80%;
+  z-index: 1;
+  border-radius: 8px;
+  /* padding: 4px; */
+  text-align: center;
+}
+
+.description
+{
+  text-align: center;
+}
+
+.show-popover { display: block; }
+
+.see-more { 
+  display: block; 
+  padding: 12px 18px; 
+  border-radius: 8px; 
+  color: black;
+  margin-top: 8px
+}
+
+
+
+
+
+.hidden {
+    display: none;
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact-form h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36px;
+}
+
+.form-box {
+    margin: 0 auto;
+    width: 80%;
+    height: 40px;
+    border: none;
+    border-bottom: paleturquoise solid 2px;
+    margin-bottom: 1%;
+
+}
+
+#message {
+    margin: 0 auto;
+    width: 80%;
+    height: 80px;
+    border: none;
+    border-bottom: paleturquoise solid 2px;
+    resize: none;
+}
+
+.form-button
+{
+    margin: 2% auto;
+    width: 150px;
+    height: 30px;
+    border: 3px lightseagreen solid;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: ease-in-out .25s;
+}
+
+.form-button:hover {
+    color: #fff;
+    background: lightseagreen;
+}
