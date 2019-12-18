@@ -28,6 +28,7 @@
     width: 100%;
     height: 100%;
     position: relative;
+    z-index: -1;
 }
 
 .contact-right {
@@ -122,6 +123,10 @@
         padding: 5%;
         object {
             width: 50px;
+            transition: ease .4s;
+        }
+        object:hover {
+            transform: scale(1.2);
         }
     }
 }

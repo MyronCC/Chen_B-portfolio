@@ -39,7 +39,7 @@
     <div class="home" id="home">
             <div class="video">
                     <button id="close" onclick="closeDialog()">close</button>
-                    <video controls autoplay>
+                    <video controls>
                         <source src="video/final_combination.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -133,36 +133,28 @@
         </div>
     </div>
     <div class="portfolio-container" id="project">
-        <h2>PORTFOLIO</h2>
+        <h2>PROJECT</h2>
         <a href="#contact"><button class="sroll-button2"></button></a>
-        <div class="portfolio-background"><p>PORTFOLIO</p></div>
+        <div class="portfolio-background"><p>PROJECT</p></div>
         <div class="portfolio">
             <div class="project-background"></div>
             <div class=portfolio-left>
-                <div class="project top-project">
-                    <div class="wrapper see-more"  data-target="1">
-                        <p>Boot Camp</p>
-                    </div>
+                <div class="project top-project see-more" data-target="1">
+                    
                     <img src="images/boot_camp.png" alt="boot_camp">
                 </div>
-                <div class="project">
-                        <div class="wrapper see-more"  data-target="2">
-                            <p>Hackathon</p>
-                        </div>
+                <div class="project see-more" data-target="2">
+                       
                     <img src="images/hackthon.png" alt="kackathon">
                 </div>
             </div>
             <div class="portfolio-right">
-                <div class="project top-project">
-                        <div class="wrapper see-more"  data-target="3">
-                            <p>Organ donate</p>
-                        </div>
+                <div class="project top-project wrapper see-more"data-target="3">
+                        
                     <img src="images/organ_donate.jpg" alt="organ donate">
                 </div>
-                <div class="project">
-                    <div class="wrapper see-more"  data-target="4">
-                        <p>Tesla Champagne</p>
-                    </div>
+                <div class="project see-more" data-target="4">
+                    
                     <img src="images/tesla_champagne.jpg" alt="tesla champagne">
                 </div>
             </div>
@@ -209,10 +201,10 @@
             </div>
             <h3>Social Links</h3>
             <div class="socialLink">
-                <a href=""><object data="images/instagram.svg" type=""></object></a>
-                <a href=""><object data="images/facebook.svg" type=""></object></a>
-                <a href=""><object data="images/linkedin.svg" type=""></object></a>
-                <a href=""><object data="images/twitter.svg" type=""></object></a>
+                <a href="https://www.instagram.com/cyui_chen/?hl=en"><object data="images/instagram.svg" type=""></object></a>
+                <a href="https://www.facebook.com/profile.php?id=100004816862516"><object data="images/facebook.svg" type=""></object></a>
+                <a href="https://www.linkedin.com/in/boling-chen-840301181/"><object data="images/linkedin.svg" type=""></object></a>
+                <a href="https://twitter.com/Myron_Chen"><object data="images/twitter.svg" type=""></object></a>
 
                 
             </div>

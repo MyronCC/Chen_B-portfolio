@@ -1,8 +1,8 @@
 <?php
-$host = "localhost"; // server165.web-hosting.com
-$user = "root"; // bchegkya_MyronCC
-$pw = "root"; // MyronChen
-$db = "project_stats"; // bchegkya_My_Projects
+$host = "server165.web-hosting.com"; // server165.web-hosting.com / localhost
+$user = "bchegkya_MyronCC"; // bchegkya_MyronCC / root
+$pw = "MyronChen"; // MyronChen / root
+$db = "bchegkya_My_Projects"; // bchegkya_My_Projects
 
 $conn = mysqli_connect($host, $user, $pw, $db);
 

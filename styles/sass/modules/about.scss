@@ -164,6 +164,7 @@
     box-shadow: none;
     p {
         margin-top: 20%;
+        font-size: 1.2em;
     }
     }
     .about-title {
@@ -195,5 +196,18 @@
 
     .sroll-button1 {
         margin-top: 660px;
+    }
+ }
+
+ @media screen and (min-width: 1500px) {
+    .selfIntroduction {
+        width: 60%;
+        height: 50%;
+        margin: 20% 20% 0 20%;
+        p {
+            font-size: 1.3em;
+        }
+    
+        
     }
  }
