@@ -1,38 +1,52 @@
 .about {
     display: flex;
     flex-direction: row;
+    margin: 0 auto;
+    position: relative;
     height: 720px;
+}
+
+#about {
+    transition: ease .5s;
 }
 
 .about-left {
     background-color: #ffe4f2;
-    width: 50%;
-    height: 720px;
+    width: 100%;
+    
     position: relative;
 }
 
 .selfIntroduction {
     position: absolute;
-    width: 60%;
-    height: 60%;
-    margin: 15% 20% 25% 20%;
-    background: url(../../images/pink_quotation.png) no-repeat;
-    background-size: 100% 100%;
+    width: 80%;
+    height: 30%;
+    padding: 0;
+    margin: 10% 20% 0 10%;
+    background: #fff;
+    box-shadow: 10px 10px 5px #888888;
+    
 
     p {
-        margin: 20%;
-        font-size: 20px;
+        margin: 10%;
+        font-size: 14px;
+        font-family: Arial;
+        font-weight: lighter;
     }
     p::first-letter {
-        font-size: 36px;
+        color:black; 
+      float: left; 
+      font-size: 5em; 
+    //   initial-letter:2 1;
     }
 }
 
 .about-background {
+    display: none;
     p {
         
         margin-top:0;float: left;
-        font-size: 108px;
+        font-size: 72px;
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
@@ -40,16 +54,17 @@
     }
 }
 .about-right {
-    width:50%;
+    display: none;
+    
 }
 
 .about-title {
     text-align: center;
-    margin-top: 20%;
+    margin-top: 10%;
     h2 {
         text-transform: Uppercase;
-        font-size: 36px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-family: 'Comic Sans MS';
         font-weight: normal;
     }
     h3 {
@@ -62,7 +77,7 @@
     display: flex;
     flex-direction: row;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .skills {
@@ -73,7 +88,8 @@
         list-style-type: none;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: normal;
-        line-height: 200%;
+        line-height: 150%;
+        font-size: 14px;
     }
 }
 
@@ -86,3 +102,98 @@
 {
     border-left: .5px solid #000;
 }
+
+.sroll-button1 {
+    position: absolute;
+    margin: 660px 48% 20px 48%;
+    width: 4%;
+    height: 40px;
+    background: url(../../images/down-arrow2.svg) no-repeat center;
+    opacity: 50%;
+    z-index: 998;
+    border: none;
+    display: none;
+}
+
+
+@media screen and (min-width: 720px) {
+    .selfIntroduction {
+        width: 60%;
+        height: 40%;
+        margin: 30% 20% 0 20%;
+        
+    
+        p {
+            margin: 10%;
+            
+        }
+    }
+
+    #mobile-version {
+        display: none;
+    }
+    .about-background {
+        display: block;
+    }
+    .about-title {
+        margin-top: 20%;
+    }
+    .about {
+        height: 480px;
+    }
+    .about-left {
+        width: 50%;
+    }
+    .about-right {
+        display: block;
+        width: 50%;
+        background: url(../../images/c.png) no-repeat center;
+        background-size: 50%;
+    }
+    .sroll-button1 {
+        display: block;
+        margin-top: 420px;
+    }
+ }
+
+ @media screen and (min-width: 900px) {
+    .selfIntroduction {
+        margin-top: 30%;
+        background: url(../../images/pink_quotation.png) no-repeat;
+    background-size: 100% 100%;
+    box-shadow: none;
+    p {
+        margin-top: 20%;
+    }
+    }
+    .about-title {
+        
+        h2 {
+            font-size: 36px;
+        }
+    }
+    .about {
+        height: 600px;
+    }
+
+    .about-background p{
+        font-size: 108px;
+    }
+    .skills li {
+        font-size: 1em;
+        line-height: 200%;
+    }
+    .sroll-button1 {
+        margin-top: 540px;
+    }
+ }
+
+ @media screen and (min-width: 1200px) {
+    .about {
+        height: 720px;
+    }
+
+    .sroll-button1 {
+        margin-top: 660px;
+    }
+ }

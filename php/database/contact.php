@@ -39,7 +39,7 @@ $headers = [
 ];
 
 if(mail($recipient, $subject, $message, $headers)){
-    echo '<p> Thank you for your contact, ' .$name.', you will get reply with 24 hours </p>';
+    echo '<p style="text-align:center;font-size:2em; font-family:Arial;"> Thank you for your contact, ' .$name.', you will get reply with 24 hours </p>';
 }else{
     echo '<p>We are sorry but the email did not go through</p>';
 }

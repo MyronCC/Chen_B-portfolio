@@ -2,8 +2,13 @@ body {
     margin: 0 auto;
 }
 
-
+.hidden {
+    display: none;
+}
 
 @import 'modules/home.scss';
 @import 'modules/about.scss';
 @import 'modules/portfolio.scss';
+@import 'modules/contact.scss';
+@import 'modules/footer.scss';
+@import 'modules/header.scss'

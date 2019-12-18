@@ -1,29 +1,49 @@
-
+.video-button {
+    width: 75px;
+    height: 75px;
+    background: url(../../images/play.svg) no-repeat center;
+    background-size: 100%;
+    border: none;
+    margin-top: 10%;
+}
 
 .home {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
+    position: relative;
+    height: 720px;
+    padding-top: 40px;
 }
 
 .home-name {
     text-align: center;
     h2 {
-        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 5%;
+        font-family: 'Comic Sans MS';
+        src: url('/styles/css/ComicSansMS3.ttf');
         font-weight: normal;
-        font-size: 48px;
+        font-size: 1.5em;
+    }
+
+    p {
+        margin-top: 5%;
+        font-family: "Bradley Hand";
+        src: url('/styles/css/Bradley Hand.ttf');
+        font-weight: bold;
     }
 }
 
 .home-left {
-    width: 50%;
-    height: 720px;
+    width: 100%;
+    background: #daf8fa;
 }
 
 .home-right {
-    width: 50%;
-    height: 720px;
+    display: none;
+    
     background-color: #daf8fa;
+    z-index: -2;
 }
 
 .logo {
@@ -36,14 +56,16 @@
 }
 
 .self {
+    z-index: 1;
     p {
         
         margin-top:0;float: right;
-        font-size: 108px;
+        font-size: 72px;
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
         color: #a5e6e3;
+        
     }
 }
 .home-right {
@@ -54,12 +76,118 @@
         position:absolute;bottom:0;
         margin-left: 25%;
         width: 50%;
-        
+        z-index: -1;
     }
 }
 
     
+ .sroll-button {
+
+    display: none;
+    position: absolute;
+    margin: 320px 48% 20px 48%;
+    width: 4%;
+    height: 40px;
+    background: url(../../images/down-arrow.svg) no-repeat center;
+    opacity: 50%;
+    z-index: 998;
+    border: none;
+ }
+
+ .sroll-button:hover {
+    opacity: 80%;
+ }
+
+ .video{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    // display: none;
+    text-align: center;
+    margin: auto;
+    margin-top: 50%;
+    flex-direction: column;
+    transform: scale(0);
+    transition: all 0.4s ease;
+    video {
+        width: 80%;
+        margin: auto;
+
+    }
+}
+#close{
+    float: top;
+    width: 80%;
+    margin: auto;
+    border: none;
+    background: #59d2fe;
+    color: #fff;
+    height: 20px;
+}
+
+ @media screen and (min-width: 720px) {
+
+    .video{
+        margin-top: 20%;
+    }
+    .home {
+        height: 520px;
+    }
+    .home-left {
+        width: 50%;
+        background: none;
+    }
+    .home-right {
+        display: block;
+        width: 50%;
+        img {
+        width: 60%;
+    }
+    }
+    .sroll-button {
+        display: block;
+        margin-top: 420px;
+    }
+ }
+
+ @media screen and (min-width: 900px) {
+    .video{
+        margin-top: 10%;
+    }
     
+    .home {
+        height: 640px;
+    }
 
+    .self p{
+        font-size: 108px;
+    }
 
+    .sroll-button {
+        margin-top: 540px;
+    }
+ }
 
+ @media screen and (min-width: 1200px) {
+    .video{
+        margin-top: 5%;
+    }
+    
+    .home {
+        height: 760px;
+    }
+    .logo {
+        margin-top: 10%;
+    }
+    .sroll-button {
+        margin-top: 660px;
+    }
+ }
+
+ @media screen and (min-width: 1500px) {
+    .video{
+        margin-top: 0%;
+    }
+    
+    
+ }

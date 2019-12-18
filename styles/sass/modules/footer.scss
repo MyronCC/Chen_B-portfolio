@@ -1,0 +1,32 @@
+.footer {
+    background: #047594;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    // display: flex;
+    // flex-direction: row;
+
+    a {
+        width: 0;
+        height: 0;
+    }
+
+    button {
+        margin:15px 40% 15px 40%;
+        height: 30px;
+        width: 40px;
+        background: url(../../images/back_to_top.svg) no-repeat center;
+        background-size: 100%;
+        border: none;
+    }
+
+    p { 
+        text-align: right;
+        margin-top: -36px;
+        margin-right: 1%;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        font-size: .5em;
+    }
+}
