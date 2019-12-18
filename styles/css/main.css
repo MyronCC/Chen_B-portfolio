@@ -595,7 +595,7 @@ body {
   text-align: center;
   display: 1 1 flex; }
   .socialLink a {
-    padding: 5%; }
+    margin: 5%; }
     .socialLink a object {
       width: 50px;
       transition: ease .4s; }
